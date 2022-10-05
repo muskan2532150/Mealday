@@ -1,9 +1,11 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchdata } from '../redux/Container/Containers';
 import { useEffect } from 'react';
+import { Item } from './Item';
 
 export const Container = () => {
+  const {data,status } = useSelector(state=>state.container);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -11,6 +13,10 @@ export const Container = () => {
   }, []);
 
   return (
-    <div>Container</div>
+    <>
+    {data.map(record=>(
+      <Item record={record} key={record.id}/>
+    ))}
+    </>
   );
 };

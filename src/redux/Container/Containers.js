@@ -40,7 +40,6 @@ export function fetchdata() {
     try {
       const res = await fetch(`${URL}`);
       const data = await res.json();
-      console.log(   Object.values(data)[1].forEach(records=> console.log(records)));
       const array = [];
       Object.values(data)[1].forEach(records => array.push({
         id: records.id,

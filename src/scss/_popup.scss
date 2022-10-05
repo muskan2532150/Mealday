@@ -1,0 +1,15 @@
+.popup{
+    height: 100%;
+    top: 10vh;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+
+    div{
+        &:first-child{
+            display: flex;
+        }
+    }
+
+}

@@ -11,8 +11,8 @@
 
 nav {
   background-color: rgb(8, 126, 164);
-  height: 7vh;
-  padding: 0.5rem;
+  height: 10vh;
+  padding: 1.5rem;
 }
 nav ul {
   display: flex;
@@ -24,6 +24,11 @@ nav ul li {
 }
 nav ul li svg {
   font-size: 2.3rem;
+}
+
+.container {
+  padding: 3rem;
+  margin: 1rem 3rem 1rem 10rem;
 }
 
 .cards {

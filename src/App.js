@@ -1,4 +1,4 @@
-import './App.css';
+import './scss/main.css';
 import { BrowserRouter } from 'react-router-dom';
 import {Container} from './component/Container';
 

@@ -1,7 +1,7 @@
 /* eslint no-param-reassign: "error" */
 import { createSlice } from '@reduxjs/toolkit';
 
-const URL = 'https://api.harvardartmuseums.org/Gallery?apikey=0b852869-b626-44de-bf16-6564d4ba2270';
+const URL = 'https://api.harvardartmuseums.org/image?apikey=0b852869-b626-44de-bf16-6564d4ba2270';
 
 const STATUSES = Object.freeze({
   IDLE: 'idle',
@@ -42,13 +42,22 @@ export function fetchdata() {
       const data = await res.json();
       const array = [];
       Object.values(data)[1].forEach(records => array.push({
-        id: records.id,
-        label: records.labeltext,
-        url: records.url,
-        name: records.name,
-        lastupdate: records.lastupdate,
-        theme: records.theme,
-        galleryid: records.galleryid
+        // id: records.id,
+        // label: records.labeltext,
+        // url: records.url,
+        // name: records.name,
+        // lastupdate: records.lastupdate,
+        // theme: records.theme,
+        // galleryid: records.galleryid
+
+        date:records.date,
+        copyright:records.copyright,
+        id:records.imageid,
+        technique: records.technique,
+        url:records.baseimageurl,
+format:records.format,
+iiifbaseurl:records.iiifbaseuri,
+
       }));
       dispatch(getdata(array));
       dispatch(setStatus(STATUSES.SUCCESS));

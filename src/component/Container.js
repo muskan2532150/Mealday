@@ -13,10 +13,10 @@ export const Container = () => {
   }, []);
 
   return (
-    <>
+    <div className='container'>
     {data.map(record=>(
       <Item record={record} key={record.id}/>
     ))}
-    </>
+    </div>
   );
 };

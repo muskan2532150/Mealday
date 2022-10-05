@@ -1,7 +1,7 @@
 /* eslint no-param-reassign: "error" */
 import { createSlice } from '@reduxjs/toolkit';
 
-const URL = 'https://api.harvardartmuseums.org/image?apikey=0b852869-b626-44de-bf16-6564d4ba2270';
+const URL = 'https://www.fruityvice.com/api/fruit/all';
 
 const STATUSES = Object.freeze({
   IDLE: 'idle',
@@ -19,12 +19,6 @@ export const ContainerSlice = createSlice({
   reducers: {
     getdata: (state, action) => { state.data = action.payload; },
     setStatus: (state, action) => { state.status = action.payload; },
-    // missionChange: (state, action) => {
-    //   state.data = state.data.map((mission) => {
-    //     if (mission.mission_id !== action.payload) return mission;
-    //     return { ...mission, mission: !mission.mission };
-    //   });
-    // },
   },
 });
 
@@ -40,17 +34,15 @@ export function fetchdata() {
     try {
       const res = await fetch(`${URL}`);
       const data = await res.json();
+      console.log(data);
       const array = [];
-      Object.values(data)[1].forEach(records => array.push({
-        date: records.date,
-        copyright: records.copyright,
-        id: records.imageid,
-        technique: records.technique,
-        url: records.baseimageurl,
-        format: records.format,
-        iiifbaseurl: records.iiifbaseuri,
-        width: records.width,
-        height: records.height
+      Object.values(data).forEach(records => array.push({
+        genus: records.genus,
+        name: records.name,
+        id: records.id,
+        family: records.family,
+        order: records.order,
+        nutritions: records.nutritions
 
       }));
       dispatch(getdata(array));
@@ -60,3 +52,14 @@ export function fetchdata() {
     }
   };
 }
+
+// date: records.date,
+        // copyright: records.copyright,
+        // id: records.imageid,
+        // technique: records.technique,
+        // url: records.baseimageurl,
+        // format: records.format,
+        // iiifbaseurl: records.iiifbaseuri,
+        // width: records.width,
+        // height: records.height,
+        //  lastupdate:records.lastupdate

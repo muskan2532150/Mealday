@@ -12,11 +12,13 @@ export const Container = () => {
     dispatch(fetchdata());
   }, []);
 
+  let count=0;
   return (
     <div className='container'>
-    {data.map(record=>(
-      <Item record={record} key={record.id}/>
-    ))}
+    {data.map((record)=>{
+      count+=1;
+      return <Item record={record} key={record.id} count={count}/>
+})}
     </div>
   );
 };

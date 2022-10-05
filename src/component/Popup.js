@@ -1,16 +1,16 @@
 import React from 'react'
 
 export const Popup = ({record}) => {
-    console.log('pop up');
+    
     return (
         <div className='popup'>
             <img src={record.url} alt={record.id} />
-            <p>{record.id}</p>
-            <p>{record.date}</p>
-            <p>{record.format}</p>
-            <p>{record.width}</p>
-            <p>{record.height}</p>
-            <a href={record.iiibaseurl}></a>
+            <p>Id: {record.id}</p>
+            <p>Date: {record.date}</p>
+            <p>Image-format: {record.format}</p>
+            <p>Width: {record.width}</p>
+            <p>Height: {record.height}</p>
+            <p>IIIf-Base-Url: </p> <span><a href={record.iiibaseurl}></a></span>
 
             <footer>
                 <p>{record.copyright}</p>

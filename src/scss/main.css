@@ -6,7 +6,24 @@
 
 .App {
   height: 100vh;
-  padding: 3rem;
+  padding: 0 0 3rem;
+}
+
+nav {
+  background-color: rgb(8, 126, 164);
+  height: 7vh;
+  padding: 0.5rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li svg {
+  font-size: 2.3rem;
 }
 
 .cards {

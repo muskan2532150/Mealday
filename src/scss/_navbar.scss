@@ -1,0 +1,21 @@
+nav{
+    background-color: rgb(8 126 164/1);
+    height: 7vh;
+    padding: .5rem;
+
+    ul{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+    
+
+    li{
+        list-style: none;
+
+        svg{
+            font-size: 2.3rem;
+
+        }
+    }
+}
+}

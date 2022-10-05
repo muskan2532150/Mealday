@@ -42,21 +42,15 @@ export function fetchdata() {
       const data = await res.json();
       const array = [];
       Object.values(data)[1].forEach(records => array.push({
-        // id: records.id,
-        // label: records.labeltext,
-        // url: records.url,
-        // name: records.name,
-        // lastupdate: records.lastupdate,
-        // theme: records.theme,
-        // galleryid: records.galleryid
-
-        date:records.date,
-        copyright:records.copyright,
-        id:records.imageid,
+        date: records.date,
+        copyright: records.copyright,
+        id: records.imageid,
         technique: records.technique,
-        url:records.baseimageurl,
-format:records.format,
-iiifbaseurl:records.iiifbaseuri,
+        url: records.baseimageurl,
+        format: records.format,
+        iiifbaseurl: records.iiifbaseuri,
+        width: records.width,
+        height: records.height
 
       }));
       dispatch(getdata(array));

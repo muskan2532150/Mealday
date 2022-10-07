@@ -71,9 +71,6 @@ nav ul li svg {
   font-size: 1.3rem;
   background: transparent;
 }
-.cards:first {
-  background-color: black;
-}
 
 .right {
   clear: right;
@@ -95,7 +92,8 @@ nav ul li svg {
 .search select option {
   font-size: medium;
 }
-.search input, .search select {
+.search input,
+.search select {
   border-color: rgb(8, 126, 164);
   font-size: 1.6rem;
   border-radius: 6px;
@@ -108,7 +106,8 @@ nav ul li svg {
 .search input:-ms-input-placeholder, .search select:-ms-input-placeholder {
   color: rgb(8, 126, 164);
 }
-.search input::placeholder, .search select::placeholder {
+.search input::placeholder,
+.search select::placeholder {
   color: rgb(8, 126, 164);
 }
 

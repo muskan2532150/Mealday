@@ -1,19 +1,19 @@
-.scrollbtn{
-    display: block;
+.scrollbtn {
+  display: block;
 }
 
-.scrollDown{
-    display:none ;
+.scrollDown {
+  display: none;
 }
 
-.topbtn{
-    position: fixed;
-    bottom: 14vh;
-    left: 5vh;
+.topbtn {
+  position: fixed;
+  bottom: 14vh;
+  left: 5vh;
 
-    button{
-        border: 0;
+  button {
+    border: 0;
     background: transparent;
     font-size: 3rem;
-    }
+  }
 }

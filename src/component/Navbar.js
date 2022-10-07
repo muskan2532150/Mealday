@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import {AiFillSetting} from 'react-icons/ai';
 
+
 export const Navbar = () => {
   return (
     <nav>
-        <Link to='/'> </Link>
+        <Link to='/'></Link>
 <div>
 <ul>
     <li><FaMicrophone/></li>

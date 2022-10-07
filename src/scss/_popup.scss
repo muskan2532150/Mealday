@@ -1,19 +1,27 @@
 .popup{
-    height: 150%;
     top: 10vh;
     left: 0;
     position: absolute;
     background: #fff;
     width: 100%;
+    padding: 2rem;
+
+p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
 button{
     font-size: 2rem;
     box-shadow: none;
+    border: 0;
+    outline: 0;
+    background: transparent;
 }
 
     .body{
             margin: auto;
-            width: 35%;
+            width: 37%;
             padding-top: 5rem;
             
         img{
@@ -21,6 +29,7 @@ button{
         }
 
         p{
+            padding: .5rem .5rem 0;
             &:nth-child(odd){
                 float: right;
             }

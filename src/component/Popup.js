@@ -1,26 +1,32 @@
 import React from 'react'
 import { Li } from './Li';
 import {AiOutlineLeft} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { Container } from './Container';
+import { useSelector } from 'react-redux';
 
 
-export const Popup = ({ record,handleClickProp }) => {
 
-    let image = `images/${record.name}.jpg`;
+export const Popup = () => {
+const {data} = useSelector(state=>state.popup);
+    let image = `images/${data.name}.jpg`;
 
     return (
         <div className='popup'>
-              <button onClick={()=>handleClickProp()}><AiOutlineLeft/></button>
+            <button>
+            <Link to='/' element={<Container/>} ><AiOutlineLeft/></Link>
+            </button>
             <div className='body'>
-                <img src={image} alt={record.name} />
-                <div> <p>Name : {record.name}</p>
-                    <p>Id: {record.id}</p>
+                <img src={image} alt={data.name} />
+                <div> <p>Name : {data.name}</p>
+                    <p>Id: {data.id}</p>
                 </div>
-                <p>Family : {record.family}</p>
-                <p>Order : {record.order}</p>
-                <p>Genus: {record.genus}</p>
+                <p>Family : {data.family}</p>
+                <p>Order : {data.order}</p>
+                <p>Genus: {data.genus}</p>
                 <div className='nut'>
                     <p> Nutritions :</p>
-                    <Li nutritions={record.nutritions} />
+                    <Li nutritions={data.nutritions} />
                 </div>
             </div>
         </div>

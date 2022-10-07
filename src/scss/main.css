@@ -50,9 +50,6 @@ nav ul li svg {
   gap: 1.3rem;
   margin-top: 13rem;
 }
-.cards:first-child {
-  margin-top: 0;
-}
 .cards div {
   display: flex;
   justify-content: space-between;
@@ -74,6 +71,9 @@ nav ul li svg {
   font-size: 1.3rem;
   background: transparent;
 }
+.cards:first {
+  background-color: black;
+}
 
 .right {
   clear: right;
@@ -83,6 +83,27 @@ nav ul li svg {
 .left {
   clear: left;
   float: left;
+}
+
+.search {
+  margin-top: 10vh;
+  float: right;
+}
+.search input {
+  border-color: rgb(8, 126, 164);
+  font-size: 1.6rem;
+  border-radius: 6px;
+  padding: 0.5rem;
+  color: rgb(8, 126, 164);
+}
+.search input::-moz-placeholder {
+  color: rgb(8, 126, 164);
+}
+.search input:-ms-input-placeholder {
+  color: rgb(8, 126, 164);
+}
+.search input::placeholder {
+  color: rgb(8, 126, 164);
 }
 
 .popup {
@@ -99,11 +120,6 @@ nav ul li svg {
   outline: 0;
   background: transparent;
 }
-.popup li {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
 .popup .body {
   margin: auto;
   width: 37%;
@@ -111,6 +127,11 @@ nav ul li svg {
 }
 .popup .body img {
   max-width: 40rem;
+}
+.popup .body li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 .popup .body p {
   padding: 0.5rem 0.5rem 0;

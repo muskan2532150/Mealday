@@ -14,13 +14,6 @@
         background: transparent;
     }
 
-li{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-
-}
-
     .body {
         margin: auto;
         width: 37%;
@@ -30,9 +23,17 @@ li{
             max-width: 40rem;
         }
 
+        li {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
         p {
             padding: .5rem .5rem 0;
         }
+
+
     }
 
     .nut {

@@ -1,7 +1,7 @@
 /* eslint no-param-reassign: "error" */
 import { createSlice } from '@reduxjs/toolkit';
 
-const URL = 'https://www.fruityvice.com/api/fruit/all';
+const URL = 'https://www.fruityvice.com/api/fruit';
 
 const STATUSES = Object.freeze({
   IDLE: 'idle',
@@ -28,11 +28,11 @@ export default ContainerSlice.reducer;
 
 // Thunks
 
-export function fetchdata() {
+export function fetchdata(query) {
   return async function fetchdataThunk(dispatch) {
     dispatch(setStatus(STATUSES.LOADING));
     try {
-      const res = await fetch(`${URL}`);
+      const res = await fetch(`${URL}/${query}`);
       const data = await res.json();
       const array = [];
       Object.values(data).forEach((records) => array.push({

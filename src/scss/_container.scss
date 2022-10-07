@@ -12,16 +12,12 @@
     gap: 1.3rem;
     margin-top: 13rem;
 
-    &:first-child{
-        margin-top: 0;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 400px;
     }
-
-div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 400px;
-}
 
     img {
         max-width: 400px;
@@ -40,6 +36,10 @@ div{
         font-size: 1.3rem;
         background: transparent;
     }
+
+    &:first{
+        background-color: black;
+    }
 }
 
 
@@ -51,4 +51,21 @@ div{
 .left {
     clear: left;
     float: left;
+}
+
+.search {
+    margin-top: 10vh;
+    float: right;
+
+    input {
+        border-color: rgb(8, 126, 164);
+        font-size: 1.6rem;
+        border-radius: 6px;
+        padding: 0.5rem;
+        color: rgb(8, 126, 164);
+
+        &::placeholder {
+            color: rgb(8, 126, 164);
+        }
+    }
 }

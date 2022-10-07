@@ -6,24 +6,43 @@ const Li = ({ nutritions }) => (
     <ul>
       <li>
         <p> calories: </p>
-        <p> {nutritions.calories}</p>
+        <p>
+          {' '}
+          {nutritions.calories}
+        </p>
       </li>
     </ul>
     <li>
       <p> carbohydrates: </p>
-      <p> {nutritions.carbohydrates} </p>
+      <p>
+        {' '}
+        {nutritions.carbohydrates}
+        {' '}
+      </p>
     </li>
     <li>
       <p> fat: </p>
-      <p> {nutritions.fat} </p>
+      <p>
+        {' '}
+        {nutritions.fat}
+        {' '}
+      </p>
     </li>
     <li>
       <p> protein: </p>
-      <p> {nutritions.protein} </p>
+      <p>
+        {' '}
+        {nutritions.protein}
+        {' '}
+      </p>
     </li>
     <li>
       <p>   sugar: </p>
-      <p>   {nutritions.sugar} </p>
+      <p>
+        {' '}
+        {nutritions.sugar}
+        {' '}
+      </p>
     </li>
   </div>
 );

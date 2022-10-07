@@ -3,26 +3,28 @@ import React from 'react';
 
 const Li = ({ nutritions }) => (
   <div className="li">
-    <p>
-      calories:
-      {nutritions.calories}
-    </p>
-    <p>
-      carbohydrates:
-      {nutritions.carbohydrates}
-    </p>
-    <p>
-      fat:
-      {nutritions.fat}
-    </p>
-    <p>
-      protein:
-      {nutritions.protein}
-    </p>
-    <p>
-      sugar:
-      {nutritions.sugar}
-    </p>
+    <ul>
+      <li>
+        <p> calories: </p>
+        <p> {nutritions.calories}</p>
+      </li>
+    </ul>
+    <li>
+      <p> carbohydrates: </p>
+      <p> {nutritions.carbohydrates} </p>
+    </li>
+    <li>
+      <p> fat: </p>
+      <p> {nutritions.fat} </p>
+    </li>
+    <li>
+      <p> protein: </p>
+      <p> {nutritions.protein} </p>
+    </li>
+    <li>
+      <p>   sugar: </p>
+      <p>   {nutritions.sugar} </p>
+    </li>
   </div>
 );
 

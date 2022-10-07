@@ -16,31 +16,31 @@ const Popup = () => {
       </button>
       <div className="body">
         <img src={image} alt={data.name} />
-        <div>
           {' '}
-          <p>
-            Name :
-            {data.name}
-          </p>
-          <p>
-            Id:
-            {data.id}
-          </p>
-        </div>
-        <p>
-          Family :
-          {data.family}
-        </p>
-        <p>
-          Order :
-          {data.order}
-        </p>
-        <p>
-          Genus:
-          {data.genus}
-        </p>
+          <li>
+           <p> Name : </p>
+          <p>  {data.name}</p>
+            </li>
+          <li>
+           <p>Id:</p> 
+          <p>  {data.id} </p>
+          </li>
+        <li>
+        <p>  Family : </p>
+        <p>  {data.family} </p>
+        </li>
+        <li>
+        <p>  Order : </p>
+        <p>  {data.order} </p>
+        </li>
+        <li>
+         <p> Genus:  </p>
+         <p> {data.genus} </p>
+        </li>
         <div className="nut">
-          <p> Nutritions :</p>
+          <li> <p>
+            Nutritions : </p>
+            </li>
           <Li nutritions={data.nutritions} />
         </div>
       </div>

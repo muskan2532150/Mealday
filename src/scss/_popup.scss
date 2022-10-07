@@ -1,45 +1,49 @@
-.popup{
+.popup {
     padding: 10rem 2rem 2rem;
 
-p{
-    font-size: 1.2rem;
-    font-weight: 600;
+    p {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    button {
+        font-size: 2rem;
+        box-shadow: none;
+        border: 0;
+        outline: 0;
+        background: transparent;
+    }
+
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-button{
-    font-size: 2rem;
-    box-shadow: none;
-    border: 0;
-    outline: 0;
-    background: transparent;
-}
+    .body {
+        margin: auto;
+        width: 37%;
+        padding-top: 5rem;
 
-    .body{
-            margin: auto;
-            width: 37%;
-            padding-top: 5rem;
-            
-        img{
+        img {
             max-width: 40rem;
         }
 
-        p{
+        p {
             padding: .5rem .5rem 0;
-            &:nth-child(odd){
-                float: right;
-            }
         }
     }
 
-.nut{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
+    .nut {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 
-.li{
-    display: flex;
-    flex-direction: column;
-}
+    .li {
+        display: flex;
+        flex-direction: column;
+    }
 
 }

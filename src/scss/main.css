@@ -89,7 +89,7 @@ nav ul li svg {
   padding: 10rem 2rem 2rem;
 }
 .popup p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .popup button {
@@ -98,6 +98,11 @@ nav ul li svg {
   border: 0;
   outline: 0;
   background: transparent;
+}
+.popup li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 .popup .body {
   margin: auto;
@@ -109,9 +114,6 @@ nav ul li svg {
 }
 .popup .body p {
   padding: 0.5rem 0.5rem 0;
-}
-.popup .body p:nth-child(odd) {
-  float: right;
 }
 .popup .nut {
   display: flex;

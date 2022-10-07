@@ -34,15 +34,14 @@ export function fetchdata() {
     try {
       const res = await fetch(`${URL}`);
       const data = await res.json();
-      console.log(data);
       const array = [];
-      Object.values(data).forEach(records => array.push({
+      Object.values(data).forEach((records) => array.push({
         genus: records.genus,
         name: records.name,
         id: records.id,
         family: records.family,
         order: records.order,
-        nutritions: records.nutritions
+        nutritions: records.nutritions,
 
       }));
       dispatch(getdata(array));
@@ -54,12 +53,12 @@ export function fetchdata() {
 }
 
 // date: records.date,
-        // copyright: records.copyright,
-        // id: records.imageid,
-        // technique: records.technique,
-        // url: records.baseimageurl,
-        // format: records.format,
-        // iiifbaseurl: records.iiifbaseuri,
-        // width: records.width,
-        // height: records.height,
-        //  lastupdate:records.lastupdate
+// copyright: records.copyright,
+// id: records.imageid,
+// technique: records.technique,
+// url: records.baseimageurl,
+// format: records.format,
+// iiifbaseurl: records.iiifbaseuri,
+// width: records.width,
+// height: records.height,
+//  lastupdate:records.lastupdate

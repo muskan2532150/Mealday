@@ -1,25 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchdata } from '../redux/Container/Containers';
-import { useEffect } from 'react';
-import { Item } from './Item';
+import Item from './Item';
 
-export const Container = () => {
-  const {data,status } = useSelector(state=>state.container);
-  
+const Container = () => {
+  const { data } = useSelector((state) => state.container);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchdata());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  let count=0;
+  let count = 0;
   return (
-    <div className='container'>
-    {data.map((record)=>{
-      count+=1;
-      return <Item record={record} key={record.id} count={count}/>
-})}
+    <div className="container">
+      {data.map((record) => {
+        count += 1;
+        return <Item record={record} key={record.id} count={count} />;
+      })}
     </div>
   );
 };
+
+export default Container;

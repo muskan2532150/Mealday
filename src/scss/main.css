@@ -43,8 +43,15 @@ nav ul li svg {
 .cards:first-child {
   margin-top: 0;
 }
+.cards div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+}
 .cards img {
   max-width: 400px;
+  border-radius: 12px;
 }
 .cards p {
   font-size: 2rem;
@@ -56,7 +63,6 @@ nav ul li svg {
   width: 50%;
   font-size: 1.3rem;
   background: transparent;
-  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.6117647059);
 }
 
 .right {

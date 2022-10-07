@@ -22,11 +22,9 @@ const Container = () => {
   };
 
   const handleSearch = (event) => {
-    console.log(event.key);
     const title = document.querySelector('.inputText').value;
     const cat = document.querySelector('#category').value;
-    if (event.key === 'Enter') 
-    { dispatch(fetchdata(`${cat}/${title}`)); }
+    if (event.key === 'Enter') { dispatch(fetchdata(`${cat}/${title}`)); }
   };
 
   let count = 0;

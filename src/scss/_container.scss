@@ -57,7 +57,14 @@
     margin-top: 10vh;
     float: right;
 
-    input {
+select{
+    margin-right: .5rem;
+    option{
+        font-size: medium;
+    }
+}
+
+    input,select {
         border-color: rgb(8, 126, 164);
         font-size: 1.6rem;
         border-radius: 6px;

@@ -89,20 +89,26 @@ nav ul li svg {
   margin-top: 10vh;
   float: right;
 }
-.search input {
+.search select {
+  margin-right: 0.5rem;
+}
+.search select option {
+  font-size: medium;
+}
+.search input, .search select {
   border-color: rgb(8, 126, 164);
   font-size: 1.6rem;
   border-radius: 6px;
   padding: 0.5rem;
   color: rgb(8, 126, 164);
 }
-.search input::-moz-placeholder {
+.search input::-moz-placeholder, .search select::-moz-placeholder {
   color: rgb(8, 126, 164);
 }
-.search input:-ms-input-placeholder {
+.search input:-ms-input-placeholder, .search select:-ms-input-placeholder {
   color: rgb(8, 126, 164);
 }
-.search input::placeholder {
+.search input::placeholder, .search select::placeholder {
   color: rgb(8, 126, 164);
 }
 

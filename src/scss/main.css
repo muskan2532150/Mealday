@@ -13,6 +13,16 @@ nav {
   background-color: rgb(8, 126, 164);
   height: 10vh;
   padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav svg {
+  font-size: 4rem;
+  color: black;
 }
 nav ul {
   display: flex;
@@ -76,12 +86,7 @@ nav ul li svg {
 }
 
 .popup {
-  top: 10vh;
-  left: 0;
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  padding: 2rem;
+  padding: 10rem 2rem 2rem;
 }
 .popup p {
   font-size: 1.2rem;
@@ -116,4 +121,23 @@ nav ul li svg {
 .popup .li {
   display: flex;
   flex-direction: column;
+}
+
+.scrollbtn {
+  display: block;
+}
+
+.scrollDown {
+  display: none;
+}
+
+.topbtn {
+  position: fixed;
+  bottom: 14vh;
+  left: 5vh;
+}
+.topbtn button {
+  border: 0;
+  background: transparent;
+  font-size: 3rem;
 }/*# sourceMappingURL=main.css.map */

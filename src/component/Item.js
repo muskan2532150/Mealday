@@ -6,6 +6,7 @@ export const Item = ({record,count}) => {
 const [click, setclick] = useState(false);
     const handleClick = () => {
     setclick(!click);
+    
     }
 
     let image = `images/${record.name}.jpg`;
@@ -14,7 +15,7 @@ const [click, setclick] = useState(false);
         { <img src={image} alt={record.name} /> }
         <p>{record.name}</p>
         <button type='button' onClick={()=>handleClick()}><AiOutlineRight/></button>
-       {click ? <Popup record={record}/> : ''} 
+       {click ? <Popup record={record}  handleClickProp={handleClick} /> : ''} 
     </div>
   )
 }

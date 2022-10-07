@@ -70,16 +70,34 @@ nav ul li svg {
 }
 
 .popup {
-  height: 100%;
+  height: 150%;
   top: 10vh;
   left: 0;
   position: absolute;
   background: #fff;
   width: 100%;
 }
-.popup div:first-child {
-  margin: auto;
+.popup button {
+  font-size: 2rem;
+  box-shadow: none;
 }
-.popup div img {
+.popup .body {
+  margin: auto;
+  width: 35%;
+  padding-top: 5rem;
+}
+.popup .body img {
   max-width: 40rem;
+}
+.popup .body p:nth-child(odd) {
+  float: right;
+}
+.popup .nut {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.popup .li {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

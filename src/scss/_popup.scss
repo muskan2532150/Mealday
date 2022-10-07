@@ -1,19 +1,41 @@
 .popup{
-    height: 100%;
+    height: 150%;
     top: 10vh;
     left: 0;
     position: absolute;
     background: #fff;
     width: 100%;
 
-    div{
-        &:first-child{
-            margin: auto;
-        }
+button{
+    font-size: 2rem;
+    box-shadow: none;
+}
 
+    .body{
+            margin: auto;
+            width: 35%;
+            padding-top: 5rem;
+            
         img{
             max-width: 40rem;
         }
+
+        p{
+            &:nth-child(odd){
+                float: right;
+            }
+        }
     }
+
+.nut{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.li{
+    display: flex;
+    flex-direction: column;
+}
 
 }

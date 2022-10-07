@@ -67,4 +67,19 @@ nav ul li svg {
 .left {
   clear: left;
   float: left;
+}
+
+.popup {
+  height: 100%;
+  top: 10vh;
+  left: 0;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+}
+.popup div:first-child {
+  margin: auto;
+}
+.popup div img {
+  max-width: 40rem;
 }/*# sourceMappingURL=main.css.map */

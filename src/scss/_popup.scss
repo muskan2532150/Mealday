@@ -8,7 +8,11 @@
 
     div{
         &:first-child{
-            display: flex;
+            margin: auto;
+        }
+
+        img{
+            max-width: 40rem;
         }
     }
 

@@ -3,9 +3,12 @@ import { Li } from './Li';
 
 export const Popup = ({record}) => {
     
+    let image = `images/${record.name}.jpg`;
+
     return (
         <div className='popup'>
-            {/* <img src={record.url} alt={record.id} /> */}
+          <div className='body'>
+          <img src={image} alt={record.name} />
            <div> <p>Name : {record.name}</p>
             <p>Id: {record.id}</p></div>
             <p>Family : {record.family}</p>
@@ -15,6 +18,7 @@ export const Popup = ({record}) => {
                 <p> Nutritions :</p>
                 <Li nutritions={record.nutritions}/>
             </div>
+          </div>
         </div>
     )
 }

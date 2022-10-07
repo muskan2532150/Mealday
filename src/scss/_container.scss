@@ -48,9 +48,22 @@
   float: left;
 }
 
+.sbtn {
+  color: rgb(8, 126, 164);
+  font-size: 2.6rem;
+  padding: 0.5rem 0.5rem 0;
+  border: 0;
+  background: transparent;
+}
+
 .search {
   margin-top: 10vh;
   float: right;
+
+  >div {
+    display: flex;
+    align-items: center;
+  }
 
   select {
     margin-right: 0.5rem;
@@ -72,4 +85,14 @@
       color: rgb(8, 126, 164);
     }
   }
+
+  button {
+    @extend .sbtn;
+  }
+}
+
+.sp {
+  text-align: center;
+  margin-left: -35rem;
+  font-size: 2rem;
 }

@@ -4,22 +4,21 @@ import { Provider } from 'react-redux';
 import store from '../redux/store';
 import Item from '../component/Item';
 import Li from '../component/Li';
-import Popup from '../component/Popup';
 import Container from '../component/Container';
 
 const fruit = {
-    genus: "Fragaria",
-    name: "Strawberry",
-    id: 3,
-    family: "Rosaceae",
-    order: "Rosales",
-    nutritions: {
-        carbohydrates: 5.5,
-        protein: 0,
-        fat: 0.4,
-        calories: 29,
-        sugar: 5.4
-    }
+  genus: 'Fragaria',
+  name: 'Strawberry',
+  id: 3,
+  family: 'Rosaceae',
+  order: 'Rosales',
+  nutritions: {
+    carbohydrates: 5.5,
+    protein: 0,
+    fat: 0.4,
+    calories: 29,
+    sugar: 5.4,
+  },
 };
 
 test('Demo test', () => {
@@ -28,21 +27,21 @@ test('Demo test', () => {
 
 test('renders container Component', () => {
   const con = render(
-  <BrowserRouter>
-  <Provider store={store}>
-    <Container/>
-    </Provider>
-  </BrowserRouter>
-    );
+    <BrowserRouter>
+      <Provider store={store}>
+        <Container />
+      </Provider>
+    </BrowserRouter>,
+  );
   expect(con).toMatchSnapshot();
 });
 
 test('renders Item Component', () => {
   const item = render(
     <BrowserRouter>
-    <Provider store={store}>
-      <Item record={fruit} key={fruit.id} count={0}  />
-    </Provider>
+      <Provider store={store}>
+        <Item record={fruit} key={fruit.id} count={0} />
+      </Provider>
     </BrowserRouter>
     ,
   );
@@ -50,9 +49,10 @@ test('renders Item Component', () => {
 });
 
 test('renders LI Component', () => {
-  const li = render(<Provider store={store}>
-    <Li nutritions={fruit.nutritions}/>
-    </Provider>);
+  const li = render(
+    <Provider store={store}>
+      <Li nutritions={fruit.nutritions} />
+    </Provider>,
+  );
   expect(li).toMatchSnapshot();
 });
-

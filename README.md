@@ -5,8 +5,10 @@
 A web application for a provides data for all kinds of fruit.
 
 # Live Demo
+- Add Allow CORS Extension for the api to work.
+- Please click on Logo in the site to make it work.
 
-[Live Demo](https://muskan2532150.github.io/Fruitycee/)
+[Live Demo](https://muskan2532150.github.io/Fruitycee)
 
 ## Built With
 

@@ -6,7 +6,7 @@ A web application for a provides data for all kinds of fruit.
 
 # Live Demo
 
-[Live Demo](https://muskan2532150.github.io/Fruitycee/)
+[Live Demo](https://muskan2532150.github.io/)
 
 ## Built With
 

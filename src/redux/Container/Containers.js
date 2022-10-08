@@ -1,8 +1,6 @@
 /* eslint no-param-reassign: "error" */
 import { createSlice } from '@reduxjs/toolkit';
 
-const URL = 'https://www.fruityvice.com/api/fruit';
-
 const STATUSES = Object.freeze({
   IDLE: 'idle',
   ERROR: 'error',
@@ -32,7 +30,7 @@ export function fetchdata(query) {
   return async function fetchdataThunk(dispatch) {
     dispatch(setStatus(STATUSES.LOADING));
     try {
-      const res = await fetch(`${URL}/${query}`);
+      const res = await fetch(`${query}`);
       const data = await res.json();
       const array = [];
       Object.values(data).forEach((records) => array.push({
@@ -51,14 +49,3 @@ export function fetchdata(query) {
     }
   };
 }
-
-// date: records.date,
-// copyright: records.copyright,
-// id: records.imageid,
-// technique: records.technique,
-// url: records.baseimageurl,
-// format: records.format,
-// iiifbaseurl: records.iiifbaseuri,
-// width: records.width,
-// height: records.height,
-//  lastupdate:records.lastupdate

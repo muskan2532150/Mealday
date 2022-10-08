@@ -10,7 +10,7 @@ const Item = ({ record, count }) => {
     dispatch(getdetail(record));
   };
 
-  const image = `images/${record.name}.jpg`;
+  const image = `${process.env.PUBLIC_URL}/images/${record.name}.jpg`;
   return (
     <div className={count % 2 ? 'cards right' : 'cards left'}>
       <img src={image} alt={record.name} />

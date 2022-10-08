@@ -7,15 +7,16 @@ import Li from './Li';
 
 const Popup = () => {
   const { data } = useSelector((state) => state.popup);
-  const image = `images/${data.name}.jpg`;
+  const image = `${process.env.PUBLIC_URL}/images/${data.name}.jpg`;
 
   return (
     <div className="popup">
       <button type="button">
-        <Link to="/" element={<Container />}><AiOutlineLeft /></Link>
+        <Link to="/Fruitycee" element={<Container />}><AiOutlineLeft /></Link>
       </button>
       <div className="body">
         <img src={image} alt={data.name} />
+        <img src="/logo192.png" alt="" />
         {' '}
         <li>
           <p> Name : </p>

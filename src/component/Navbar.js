@@ -6,7 +6,7 @@ import { GiFruitBowl } from 'react-icons/gi';
 
 const Navbar = () => (
   <nav>
-    <Link to="/"><GiFruitBowl /></Link>
+    <Link to="/Fruitycee"><GiFruitBowl /></Link>
     <div>
       <ul>
         <li><FaMicrophone /></li>

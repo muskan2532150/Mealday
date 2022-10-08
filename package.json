@@ -1,7 +1,8 @@
 {
   "name": "disney-characters",
-  "homepage": "https://muskan2532150.github.io/Fruitycee",
+  "homepage": "https://muskan2532150.github.io/Fruitycee/",
   "version": "0.1.0",
+  "proxy":"https://www.fruityvice.com/api/fruit",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",

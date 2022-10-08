@@ -6,14 +6,14 @@ import Item from '../component/Item';
 import Container from '../component/Container';
 
 const fruit = {
-  idMeal: "53065",
-  strMeal: "Sushi",
+  idMeal: '53065',
+  strMeal: 'Sushi',
   strDrinkAlternate: null,
-  strCategory: "Seafood",
-  strArea: "Japanese",
-  url: "https:\/\/www.bbcgoodfood.com\/recipes\/simple-sushi",
+  strCategory: 'Seafood',
+  strArea: 'Japanese',
+  url: 'https:\/\/www.bbcgoodfood.com\/recipes\/simple-sushi',
   Tags: null,
-}
+};
 test('Demo test', () => {
   expect((1 + 2)).toBe(3);
 });

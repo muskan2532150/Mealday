@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Fruitycee
+# Mealday
 
 A web application for a provides data for Meals.
 

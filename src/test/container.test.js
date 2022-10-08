@@ -11,6 +11,7 @@ const fruit = {
   strDrinkAlternate: null,
   strCategory: 'Seafood',
   strArea: 'Japanese',
+  // eslint-disable-next-line
   url: 'https:\/\/www.bbcgoodfood.com\/recipes\/simple-sushi',
   Tags: null,
 };

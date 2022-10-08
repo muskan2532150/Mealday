@@ -3,7 +3,6 @@ import { AiOutlineLeft } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Container from './Container';
-// import Li from './Li';
 
 const Popup = () => {
   const { data } = useSelector((state) => state.popup);

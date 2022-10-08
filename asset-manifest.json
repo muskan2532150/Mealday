@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Fruitycee/static/css/main.b072be97.css",
-    "main.js": "/Fruitycee/static/js/main.5d138497.js",
+    "main.js": "/Fruitycee/static/js/main.c3f51007.js",
     "index.html": "/Fruitycee/index.html",
     "main.b072be97.css.map": "/Fruitycee/static/css/main.b072be97.css.map",
-    "main.5d138497.js.map": "/Fruitycee/static/js/main.5d138497.js.map"
+    "main.c3f51007.js.map": "/Fruitycee/static/js/main.c3f51007.js.map"
   },
   "entrypoints": [
     "static/css/main.b072be97.css",
-    "static/js/main.5d138497.js"
+    "static/js/main.c3f51007.js"
   ]
 }

@@ -42,7 +42,7 @@ git@github.com:muskan2532150/Fruitycee.git
 3. Open terminal and cd into project and install the dependencies
 
 ```bash
-cd Space-Travelers-Hub
+cd Fruitycee
 
 ```
 
@@ -71,7 +71,7 @@ Deployed using Github Pages
 
 - GitHub: [Muskan Gupta](https://github.com/muskan2532150)
 - Twitter: [Muskan Gupta](muskan2532150)
-- Linkedin:[Muskan Gupta](https://www.linkedin.com/in/muskan-gupta-869165225/)
+- Linkedin:[Muskan Gupta](https://www.linkedin.com/in/muskan-gupt/)
 
 ## 🤝 Contributing
 

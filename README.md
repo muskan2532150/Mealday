@@ -2,13 +2,11 @@
 
 # Fruitycee
 
-A web application for a provides data for all kinds of fruit.
+A web application for a provides data for Meals.
 
 # Live Demo
-- Add Allow CORS Extension for the api to work.
-- Please click on Logo in the site to make it work.
 
-[Live Demo](https://muskan2532150.github.io/Fruitycee)
+[Live Demo](https://calm-kitten-22db33.netlify.app/)
 
 ## Built With
 
@@ -84,9 +82,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [React-Capstone-Project](https://github.com/microverseinc/curriculum-react-redux/blob/main/capstone/react_capstone.md)
-- [Fruityvice](https://www.fruityvice.com/)
 - [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
-- [Unsplash](https://unsplash.com/)
 
 ## 📝 License
 

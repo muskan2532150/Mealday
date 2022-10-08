@@ -108,6 +108,12 @@ nav ul li svg {
   .search {
     float: none;
     margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+  }
+  .search > div {
+    display: flex;
+    align-self: center;
   }
   .search button {
     font-size: 1.9rem;

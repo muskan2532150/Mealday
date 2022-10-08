@@ -1,6 +1,8 @@
 /* eslint no-param-reassign: "error" */
 import { createSlice } from '@reduxjs/toolkit';
 
+const apiUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruityvice.com/api/fruit/' : '';
+
 const STATUSES = Object.freeze({
   IDLE: 'idle',
   ERROR: 'error',
@@ -30,7 +32,7 @@ export function fetchdata(query) {
   return async function fetchdataThunk(dispatch) {
     dispatch(setStatus(STATUSES.LOADING));
     try {
-      const res = await fetch(`${query}`);
+      const res = await fetch(`${apiUrl}${query}`);
       const data = await res.json();
       const array = [];
       Object.values(data).forEach((records) => array.push({

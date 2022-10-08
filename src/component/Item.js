@@ -10,12 +10,11 @@ const Item = ({ record, count }) => {
     dispatch(getdetail(record));
   };
 
-  const image = `${process.env.PUBLIC_URL}/images/${record.name}.jpg`;
   return (
     <div className={count % 2 ? 'cards right' : 'cards left'}>
-      <img src={image} alt={record.name} />
+      <img src={record.url} alt={record.Tags} />
       <div>
-        <p>{record.name}</p>
+        <p>{record.strMeal}</p>
         <button onClick={() => handleClick(record)} type="button">
           <Link to="/details"><AiOutlineRight /></Link>
         </button>

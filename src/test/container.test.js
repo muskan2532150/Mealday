@@ -3,24 +3,17 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 import Item from '../component/Item';
-import Li from '../component/Li';
 import Container from '../component/Container';
 
 const fruit = {
-  genus: 'Fragaria',
-  name: 'Strawberry',
-  id: 3,
-  family: 'Rosaceae',
-  order: 'Rosales',
-  nutritions: {
-    carbohydrates: 5.5,
-    protein: 0,
-    fat: 0.4,
-    calories: 29,
-    sugar: 5.4,
-  },
-};
-
+  idMeal: "53065",
+  strMeal: "Sushi",
+  strDrinkAlternate: null,
+  strCategory: "Seafood",
+  strArea: "Japanese",
+  url: "https:\/\/www.bbcgoodfood.com\/recipes\/simple-sushi",
+  Tags: null,
+}
 test('Demo test', () => {
   expect((1 + 2)).toBe(3);
 });
@@ -46,13 +39,4 @@ test('renders Item Component', () => {
     ,
   );
   expect(item).toMatchSnapshot();
-});
-
-test('renders LI Component', () => {
-  const li = render(
-    <Provider store={store}>
-      <Li nutritions={fruit.nutritions} />
-    </Provider>,
-  );
-  expect(li).toMatchSnapshot();
 });

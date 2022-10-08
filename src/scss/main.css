@@ -36,138 +36,6 @@ nav ul li svg {
   font-size: 2.3rem;
 }
 
-.container {
-  padding: 3rem;
-  margin: 1rem 3rem 1rem 10rem;
-}
-
-.cards {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 2rem;
-  gap: 1.3rem;
-  margin-top: 13rem;
-}
-.cards div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 400px;
-}
-.cards img {
-  max-width: 400px;
-  border-radius: 12px;
-}
-.cards p {
-  font-size: 2rem;
-  font-weight: 700;
-}
-.cards button {
-  border: 0;
-  outline: 0;
-  width: 50%;
-  font-size: 1.3rem;
-  background: transparent;
-}
-
-.right {
-  clear: right;
-  float: right;
-}
-
-.left {
-  clear: left;
-  float: left;
-}
-
-.sbtn, .search button {
-  color: rgb(8, 126, 164);
-  font-size: 2.6rem;
-  padding: 0.5rem 0.5rem 0;
-  border: 0;
-  background: transparent;
-}
-
-.search {
-  margin-top: 10vh;
-  float: right;
-}
-.search > div {
-  display: flex;
-  align-items: center;
-}
-.search select {
-  margin-right: 0.5rem;
-}
-.search select option {
-  font-size: medium;
-}
-.search input,
-.search select {
-  border-color: rgb(8, 126, 164);
-  font-size: 1.6rem;
-  border-radius: 6px;
-  padding: 0.5rem;
-  color: rgb(8, 126, 164);
-}
-.search input::-moz-placeholder, .search select::-moz-placeholder {
-  color: rgb(8, 126, 164);
-}
-.search input:-ms-input-placeholder, .search select:-ms-input-placeholder {
-  color: rgb(8, 126, 164);
-}
-.search input::placeholder,
-.search select::placeholder {
-  color: rgb(8, 126, 164);
-}
-.sp {
-  text-align: center;
-  margin-left: -75rem;
-  font-size: 2rem;
-}
-
-.popup {
-  padding: 10rem 2rem 2rem;
-}
-.popup p {
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-.popup button {
-  font-size: 2rem;
-  box-shadow: none;
-  border: 0;
-  outline: 0;
-  background: transparent;
-}
-.popup .body {
-  margin: auto;
-  width: 37%;
-  padding-top: 5rem;
-}
-.popup .body img {
-  max-width: 40rem;
-}
-.popup .body li {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-.popup .body p {
-  padding: 0.5rem 0.5rem 0;
-}
-.popup .nut {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.popup .li {
-  display: flex;
-  flex-direction: column;
-}
-
 .scrollbtn {
   display: block;
 }
@@ -185,4 +53,95 @@ nav ul li svg {
   border: 0;
   background: transparent;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 520px) {
+  .App {
+    padding: 0;
+  }
+  nav svg {
+    font-size: 2rem;
+  }
+  nav ul li svg {
+    font-size: 1.3rem;
+  }
+  .cards {
+    margin-top: 2rem;
+  }
+  .cards > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cards img {
+    max-width: 9rem;
+  }
+  .cards p {
+    font-size: 1.5rem;
+  }
+  .cards button {
+    font-size: 0.9rem;
+    background-color: transparent;
+    border: 0;
+  }
+  .cards .topbtn {
+    left: 0.2rem;
+    bottom: 2vh;
+  }
+  .cards .topbtn button {
+    color: #fff;
+  }
+  .container {
+    background-color: rgb(93, 192, 224);
+    padding-top: 3rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .right {
+    clear: none;
+    float: none;
+    padding-left: 1.8rem;
+  }
+  .left {
+    padding-right: 1.8rem;
+  }
+  .search {
+    float: none;
+    margin-top: 10vh;
+  }
+  .search button {
+    font-size: 1.9rem;
+    background-color: transparent;
+    border: 0;
+  }
+  .popup {
+    background-color: rgb(93, 192, 224);
+    margin-top: 10vh;
+    height: 100%;
+  }
+  .popup button {
+    font-size: 2rem;
+    background-color: transparent;
+    border: 0;
+  }
+  .popup .body {
+    margin: 0;
+    padding: 3rem;
+  }
+  .popup .body img {
+    max-width: 19rem;
+    border-radius: 3rem;
+  }
+  .popup .body li {
+    border-top: 1px solid #000;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .popup .body li:nth-child(odd) {
+    background-color: rgb(25, 131, 167);
+  }
+  .popup p {
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

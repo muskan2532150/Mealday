@@ -1,0 +1,118 @@
+@media screen and (max-width: 520px) {
+    .App{
+        padding: 0;
+    }
+  nav {
+    svg {
+      font-size: 2rem;
+    }
+
+    ul {
+      li {
+        svg {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .cards {
+    margin-top: 2rem;
+
+> div{
+display: flex;
+justify-content: space-between;
+}
+
+    img {
+      max-width: 9rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+      background-color: transparent;
+      border: 0;
+
+    }
+
+    .topbtn {
+      left: 0.2rem;
+      bottom: 2vh;
+
+      button {
+        color: #fff;
+      }
+    }
+  }
+
+  .container {
+    background-color: rgb(93, 192, 224);
+    padding-top: 3rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .right {
+    clear: none;
+    float: none;
+    padding-left: 1.8rem;
+  }
+
+.left{
+    padding-right: 1.8rem;
+}
+
+  .search {
+    float: none;
+    margin-top: 10vh;
+
+    button{
+        font-size: 1.9rem;
+      background-color: transparent;
+      border: 0;
+
+    }
+  }
+
+  .popup {
+    background-color: rgb(93, 192, 224);
+    margin-top: 10vh;
+    height:100%;
+
+    button{
+        font-size: 2rem;
+        background-color: transparent;
+        border: 0;  
+    }
+
+    .body {
+      margin: 0;
+      padding: 3rem;
+
+      img {
+        max-width: 19rem;
+        border-radius: 3rem;
+      }
+
+      li {
+        border-top: 1px solid #000;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        &:nth-child(odd) {
+          background-color: rgb(25, 131, 167);
+        }
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -3,70 +3,58 @@ import { AiOutlineLeft } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Container from './Container';
-import Li from './Li';
+// import Li from './Li';
 
 const Popup = () => {
   const { data } = useSelector((state) => state.popup);
-  const image = `${process.env.PUBLIC_URL}/images/${data.name}.jpg`;
 
   return (
     <div className="popup">
       <button type="button">
-        <Link to="/Fruitycee" element={<Container />}><AiOutlineLeft /></Link>
+        <Link to="/" element={<Container />}><AiOutlineLeft /></Link>
       </button>
       <div className="body">
-        <img src={image} alt={data.name} />
-        <img src="/logo192.png" alt="" />
+        <img src={data.url} alt={data.strMeal} />
         {' '}
         <li>
-          <p> Name : </p>
+          <p> Meal : </p>
           <p>
             {' '}
-            {data.name}
+            {data.strMeal}
           </p>
         </li>
         <li>
           <p>Id:</p>
           <p>
             {' '}
-            {data.id}
+            {data.idMeal}
             {' '}
           </p>
         </li>
         <li>
-          <p>  Family : </p>
+          <p>  Area : </p>
           <p>
             {' '}
-            {data.family}
+            {data.strArea}
             {' '}
           </p>
         </li>
         <li>
-          <p>  Order : </p>
+          <p>  Category : </p>
           <p>
             {' '}
-            {data.order}
+            {data.strCategory}
             {' '}
           </p>
         </li>
         <li>
-          <p> Genus:  </p>
+          <p> Tags:  </p>
           <p>
             {' '}
-            {data.genus}
+            {data.Tags}
             {' '}
           </p>
         </li>
-        <div className="nut">
-          <li>
-            {' '}
-            <p>
-              Nutritions :
-              {' '}
-            </p>
-          </li>
-          <Li nutritions={data.nutritions} />
-        </div>
       </div>
     </div>
   );

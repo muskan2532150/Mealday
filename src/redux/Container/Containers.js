@@ -1,8 +1,6 @@
 /* eslint no-param-reassign: "error" */
 import { createSlice } from '@reduxjs/toolkit';
 
-const apiUrl = process.env.NODE_ENV === 'production' ? 'https://www.fruityvice.com/api/fruit/' : '';
-
 const STATUSES = Object.freeze({
   IDLE: 'idle',
   ERROR: 'error',
@@ -32,17 +30,17 @@ export function fetchdata(query) {
   return async function fetchdataThunk(dispatch) {
     dispatch(setStatus(STATUSES.LOADING));
     try {
-      const res = await fetch(`${apiUrl}${query}`);
+      const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
       const data = await res.json();
       const array = [];
-      Object.values(data).forEach((records) => array.push({
-        genus: records.genus,
-        name: records.name,
-        id: records.id,
-        family: records.family,
-        order: records.order,
-        nutritions: records.nutritions,
-
+      Object.values(data.meals).forEach((records) => array.push({
+        idMeal: records.idMeal,
+        strMeal: records.strMeal,
+        strDrinkAlternate: records.strDrinkAlternate,
+        strCategory: records.strCategory,
+        strArea: records.strArea,
+        url: records.strMealThumb,
+        Tags: records.strTags,
       }));
       dispatch(getdata(array));
       dispatch(setStatus(STATUSES.SUCCESS));

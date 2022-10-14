@@ -34,13 +34,13 @@ To get a local copy up and running follow these simple example steps.
 2. Clone the repo in your local machine:
 
 ```bash
-git@github.com:muskan2532150/Fruitycee.git
+https://github.com/muskan2532150/Mealday.git
 ```
 
 3. Open terminal and cd into project and install the dependencies
 
 ```bash
-cd Fruitycee
+cd Mealday
 
 ```
 
@@ -69,7 +69,7 @@ Deployed using Github Pages
 
 - GitHub: [Muskan Gupta](https://github.com/muskan2532150)
 - Twitter: [Muskan Gupta](muskan2532150)
-- Linkedin:[Muskan Gupta](https://www.linkedin.com/in/muskan-gupt/)
+- Linkedin: [Muskan Gupta](https://www.linkedin.com/in/muskan-gupt/)
 
 ## 🤝 Contributing
 

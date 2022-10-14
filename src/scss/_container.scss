@@ -1,6 +1,5 @@
 .container {
   padding: 3rem;
-  margin: 1rem 3rem 1rem 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -12,7 +11,7 @@
   flex-wrap: wrap;
   padding: 2rem;
   gap: 1.3rem;
-  margin-top: 13rem;
+  margin-top: 3rem;
 
   div {
     display: flex;
@@ -22,7 +21,7 @@
   }
 
   img {
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 12px;
   }
 

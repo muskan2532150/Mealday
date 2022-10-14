@@ -32,7 +32,7 @@ const Container = () => {
 
   let count = 0;
   return (
-    <>
+    <main>
       <div className="search">
         { bool ? (
           <>
@@ -59,7 +59,7 @@ const Container = () => {
           <button className={scroll > 20 ? 'scrollbtn ' : 'scrollDown'} type="button" onClick={() => handleScroll()}><AiOutlineArrowUp /></button>
         </div>
       </div>
-    </>
+    </main>
 
   );
 };

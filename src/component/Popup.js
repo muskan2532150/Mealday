@@ -15,7 +15,7 @@ const Popup = () => {
       <div className="body">
         <img src={data.url} alt={data.strMeal} />
         {' '}
-        <li>
+       <ul> <li>
           <p> Meal : </p>
           <p>
             {' '}
@@ -46,14 +46,15 @@ const Popup = () => {
             {' '}
           </p>
         </li>
-        <li>
+        {data.Tags ?<li>
           <p> Tags:  </p>
           <p>
             {' '}
             {data.Tags}
             {' '}
           </p>
-        </li>
+        </li>: '' }
+        </ul>
       </div>
     </div>
   );

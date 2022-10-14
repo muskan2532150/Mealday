@@ -11,7 +11,7 @@ const Item = ({ record, count }) => {
   };
 
   return (
-    <div className={count % 2 ? 'cards right' : 'cards left'}>
+    <div className='cards'>
       <img src={record.url} alt={record.Tags} />
       <div>
         <p>{record.strMeal}</p>

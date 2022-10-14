@@ -1,4 +1,4 @@
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1106px) {
   .App {
     padding: 0;
   }
@@ -19,14 +19,9 @@
 
   .search {
     float: none;
-    margin-top: 10vh;
     display: flex;
-    justify-content: center;
-
-    > div {
-      display: flex;
-      align-self: center;
-    }
+    justify-content: flex-start;
+    width: 50%;
 
     button {
       font-size: 1.9rem;
@@ -44,7 +39,7 @@
     }
 
     img {
-      max-width: 9rem;
+      max-width: 200%;
     }
 
     p {
@@ -60,8 +55,7 @@
 
   .popup {
     background-color: rgb(93, 192, 224);
-    margin-top: 10vh;
-    height: 100%;
+    padding: 2rem;
 
     button {
       font-size: 2rem;
@@ -71,10 +65,11 @@
 
     .body {
       margin: 0;
-      padding: 3rem;
+      padding: 2rem 3rem;
+      width: 90%;
 
       img {
-        max-width: 19rem;
+        max-width: 60%;
         border-radius: 3rem;
       }
 
@@ -96,7 +91,6 @@
   }
 
   .topbtn {
-    left: 0.2rem;
     bottom: 2vh;
 
     button {
@@ -106,19 +100,33 @@
 
   .container {
     background-color: rgb(93, 192, 224);
-    padding-top: 3rem;
+    padding: 3rem 0;
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
 
-  .right {
-    clear: none;
-    float: none;
-    padding-left: 1.8rem;
+@media screen and (max-width: 520px) {
+  .container{
+    padding: 3rem 0 0 1rem;
+  }
+  .cards {
+    width: 100%;
+    padding: 0;
+    img {
+      max-width: 11rem;
+    }
   }
 
-  .left {
-    padding-right: 1.8rem;
+  .popup {
+
+    .body {
+padding: 2rem 0;
+      img {
+        max-width: 17rem;
+      }
+      }
   }
+
 }

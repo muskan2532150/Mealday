@@ -30,7 +30,6 @@ const Container = () => {
     }
   };
 
-  let count = 0;
   return (
     <main>
       <div className="search">
@@ -51,10 +50,7 @@ const Container = () => {
           : <button type="button" className="sbtn" onClick={() => setbool(!bool)}><AiOutlineSearch /></button>}
       </div>
       <div className="container">
-        {data.map((record) => {
-          count += 1;
-          return <Item record={record} key={record.idMeal} count={count} />;
-        })}
+        {data.map((record) => <Item record={record} key={record.idMeal} />)}
         <div className="topbtn">
           <button className={scroll > 20 ? 'scrollbtn ' : 'scrollDown'} type="button" onClick={() => handleScroll()}><AiOutlineArrowUp /></button>
         </div>

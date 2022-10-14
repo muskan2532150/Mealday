@@ -108,25 +108,26 @@
 }
 
 @media screen and (max-width: 520px) {
-  .container{
+  .container {
     padding: 3rem 0 0 1rem;
   }
+
   .cards {
     width: 100%;
     padding: 0;
+
     img {
       max-width: 11rem;
     }
   }
 
   .popup {
-
     .body {
-padding: 2rem 0;
+      padding: 2rem 0;
+
       img {
         max-width: 17rem;
       }
-      }
+    }
   }
-
 }

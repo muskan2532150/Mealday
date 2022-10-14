@@ -4,14 +4,14 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getdetail } from '../redux/popup/popup';
 
-const Item = ({ record, count }) => {
+const Item = ({ record }) => {
   const dispatch = useDispatch();
   const handleClick = (record) => {
     dispatch(getdetail(record));
   };
 
   return (
-    <div className='cards'>
+    <div className="cards">
       <img src={record.url} alt={record.Tags} />
       <div>
         <p>{record.strMeal}</p>

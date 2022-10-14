@@ -15,45 +15,49 @@ const Popup = () => {
       <div className="body">
         <img src={data.url} alt={data.strMeal} />
         {' '}
-       <ul> <li>
-          <p> Meal : </p>
-          <p>
-            {' '}
-            {data.strMeal}
-          </p>
-        </li>
-        <li>
-          <p>Id:</p>
-          <p>
-            {' '}
-            {data.idMeal}
-            {' '}
-          </p>
-        </li>
-        <li>
-          <p>  Area : </p>
-          <p>
-            {' '}
-            {data.strArea}
-            {' '}
-          </p>
-        </li>
-        <li>
-          <p>  Category : </p>
-          <p>
-            {' '}
-            {data.strCategory}
-            {' '}
-          </p>
-        </li>
-        {data.Tags ?<li>
-          <p> Tags:  </p>
-          <p>
-            {' '}
-            {data.Tags}
-            {' '}
-          </p>
-        </li>: '' }
+        <ul>
+          {' '}
+          <li>
+            <p> Meal : </p>
+            <p>
+              {' '}
+              {data.strMeal}
+            </p>
+          </li>
+          <li>
+            <p>Id:</p>
+            <p>
+              {' '}
+              {data.idMeal}
+              {' '}
+            </p>
+          </li>
+          <li>
+            <p>  Area : </p>
+            <p>
+              {' '}
+              {data.strArea}
+              {' '}
+            </p>
+          </li>
+          <li>
+            <p>  Category : </p>
+            <p>
+              {' '}
+              {data.strCategory}
+              {' '}
+            </p>
+          </li>
+          {data.Tags ? (
+            <li>
+              <p> Tags:  </p>
+              <p>
+                {' '}
+                {data.Tags}
+                {' '}
+              </p>
+            </li>
+          ) : '' }
         </ul>
       </div>
     </div>

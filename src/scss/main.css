@@ -206,6 +206,7 @@ nav ul li svg {
 @media screen and (max-width: 1106px) {
   .App {
     padding: 0;
+    background-color: #5dc0e0;
   }
 
   nav svg {
@@ -253,7 +254,6 @@ nav ul li svg {
   }
 
   .popup {
-    background-color: rgb(93, 192, 224);
     padding: 2rem;
   }
 

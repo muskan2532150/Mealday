@@ -68,7 +68,7 @@ Deployed using Github Pages
 #### 👤 **Muskan Gupta**
 
 - GitHub: [Muskan Gupta](https://github.com/muskan2532150)
-- Twitter: [Muskan Gupta](muskan2532150)
+- Twitter: [Muskan Gupta](https://twitter.com/muskan2532150)
 - Linkedin: [Muskan Gupta](https://www.linkedin.com/in/muskan-gupt/)
 
 ## 🤝 Contributing
